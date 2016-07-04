@@ -1,0 +1,66 @@
+{{!< default}}
+{{#contentFor 'adminPageStyles'}}
+  <link rel="stylesheet" href="../css/admin/school_manager.css">
+  <script type="text/javascript" src="../js/admin/school_manager.js"></script>
+{{/contentFor}}
+
+<div class="school">
+
+  <div class="schoolHeader">
+    <span class="schoolWord">学校管理</span>
+  </div>
+
+  <div class="schoolTableHeader">
+    <i class="icon-th"></i> 学校列表
+    <a href="#" class="tools">
+      <i class="icon-trash"></i>删除
+    </a>
+  </div>
+
+  <div class="schoolTableContent">
+    <table class="schoolContent">
+      <thead id="schoolContents">
+        <tr>
+          <th><input id="allSelect" type="checkbox"></th>
+          <th data-name="schoolId">学校编号</th>
+          <th data-name="schoolName">学校名称</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each schools}}
+          <tr>
+            <td>
+              <input class="select" data-name= {{schoolId}} type="checkbox">
+            </td>
+            <td>
+              {{schoolId}}
+            </td>
+            <td>
+              <input type="text" class="schoolName" value= {{schoolName}}>
+            </td>
+            <td>
+              <input type="submit" data-name= {{schoolId}} class="save" value="保存">
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+
+
+
+  <div class="addSchool">
+    <div class="addSchoolHeader">
+      <i class="icon-plus"></i>添加学校
+    </div>
+
+
+    <div class="addSchoolContent">
+      <span>输入学校编号：</span>
+      <input type="text" class="addschoolId" placeholder="输入学校编号">
+      <span>输入学校名字：</span>
+      <input type="text" class="addschoolName" placeholder="输入学校名字">
+      <input type="submit" id="addSchool" value="添加">
+    </div>
+  </div>
+</div>

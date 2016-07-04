@@ -1,0 +1,67 @@
+{{!< default}}
+{{#contentFor 'adminPageStyles'}}
+  <link rel="stylesheet" href="../css/admin/logging.css">
+  <script type="text/javascript" src="../js/admin/logging.js"></script>
+{{/contentFor}}
+
+<div class="model">
+
+  <div class="modelManagerHeader">
+    <span>录入成绩</span>
+  </div>
+
+
+  <div class="downloadModel">
+    <div class="downloadModelHeader">
+      <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+      <span class="downloadWord">下载模版</span>
+    </div>
+
+    <div class="downloadModelContent">
+      <sapn>点击下载模版，录入</span><a class="downloadPrelim" href="#">初赛成绩</a>/
+        <a href="#" class="downloadFinal">复赛成绩</a>
+    </div>
+  </div>
+
+
+  <div class="uploadModel">
+    <div class="uploadModelHeader">
+      <i class="icon-font"></i>
+      <span class="uploadWord">录入初赛成绩</span>
+    </div>
+
+    <div class="uploadModelContent">
+      <form method="post" action="logging/uploadPrelim" enctype="multipart/form-data">
+        <a href="#" class="uploadPrelim">  点击上传模版，录入初赛成绩
+            <input type="file" name="prelim">
+        </a>
+        <input type="submit" class="submits" value="提交">
+      </form>
+    </div>
+  </div>
+
+  <div class="uploadModel">
+    <div class="uploadModelHeader">
+      <i class="icon-font"></i>
+      <span class="uploadWord">录入复赛成绩</span>
+    </div>
+
+    <div class="uploadModelContent">
+      <form method="post" action="logging/uploadFinal" enctype="multipart/form-data">
+        <a href="#" class="uploadFinal">点击上传模版，录入复赛成绩
+              <input type="file" name="final"></a>
+        <input type="submit" class="submits" value="提交">
+      </form>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+</div>
+</div>

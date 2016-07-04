@@ -1,0 +1,25 @@
+{{!< ../layout/fontstage_layout}}
+
+{{#contentFor 'fontstagePageStyles'}}
+  <link rel="stylesheet" href="../css/user/notice.css">
+  <script type="text/javascript" src="../js/user/notice.js"></script>
+{{/contentFor}}
+
+<div class="notice">
+  <div class="ad"></div>
+  <div class="noticeContent">
+    <h4>通知公告</h4>
+    <div class="content">
+      <ul>
+        {{#each notice}}
+          <li>
+            <a href="notice_detail?data={{noticeId}}" data-name= {{noticeId}} title= {{noticeTitle}}>
+        {{noticeTitle}}</a>
+            <span class="noticeTime">{{noticeTime}}</span>
+          </li>
+        {{/each}}
+      </ul>
+
+    </div>
+  </div>
+</div>

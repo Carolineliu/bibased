@@ -1,0 +1,71 @@
+{{!< ../layout/fontstage_layout}}
+
+{{#contentFor 'fontstagePageStyles'}}
+  <link rel="stylesheet" href="../css/user/contest_detail.css">
+  <!-- <script type="text/javascript" src="../js/user/contest_detail.js"></script> -->
+{{/contentFor}}
+
+<div class="contestDetail">
+  <div class="contestDetailHeader">
+    <span>基本信息</span>
+  </div>
+  <div class="contestDetailContent">
+
+    <table>
+      <tr>
+        <td class="word">作品名称:</td>
+        <td>
+          {{contestName}}
+        </td>
+      </tr>
+      <tr>
+        <td class="word">学校名称:</td>
+        <td>
+          {{schoolName}}
+        </td>
+      </tr>
+      <tr>
+        <td class="word">项目负责人姓名:</td>
+        <td>
+          {{leader}}
+        </td>
+      </tr>
+      <tr>
+        <td class="word">其他成员姓名:</td>
+        <td>
+          {{studentCount}}
+        </td>
+
+      </tr>
+
+      <tr>
+        <td class="word">指导老师姓名:</td>
+        <td>
+          {{tutor}}
+        </td>
+      </tr>
+
+      <tr>
+        <td class="word">项目简介:</td>
+        <td>
+          {{intro}}
+        </td>
+      </tr>
+      <tr>
+        <td class="word">详细介绍:</td>
+        <td>
+          {{introduce}}
+        </td>
+      </tr>
+      <tr>
+        <td class="word">获奖情况:</td>
+        <td>
+          {{isWin}}
+        </td>
+      </tr>
+    </table>
+
+  </div>
+
+
+</div>

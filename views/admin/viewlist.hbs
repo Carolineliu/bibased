@@ -1,0 +1,55 @@
+{{!< default}}
+{{#contentFor 'adminPageStyles'}}
+  <link rel="stylesheet" href="../css/admin/viewlist.css">
+  <script type="text/javascript" src="../js/admin/viewlist.js"></script>
+{{/contentFor}}
+
+<div class="viewlist">
+  <div class="viewlistHeader">
+    <span class="viewlistWord">查看复赛名单</span>
+  </div>
+
+  <div class="viewlistTableHeader">
+    <i class="icon-globe"></i> 复赛名单列表
+    <a href="#" class="tools">
+      <i class="icon-trash"></i>删除
+    </a>
+  </div>
+
+  <div class="viewlistContent">
+    <table>
+      <thead id="viewlistContents">
+        <tr>
+          <th><input type="checkbox" id="allSelect"></th>
+          <th data-name="contestId">项目编号</th>
+          <th data-name="contestName">项目名称</th>
+          <th data-name="leader">项目负责人</th>
+          <th data-name="studentCount">作者</th>
+          <th data-name="tutor">指导老师</th>
+          <th data-name="year">作品日期</th>
+          <th data-name="school">学校</th>
+          <th data-name="prelim">初赛成绩</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each semifinalList}}
+          <tr>
+            <td><input type="checkbox" class="select" data-name={{contestId}}></td>
+            <td>{{contestId}}</td>
+            <td>{{contestName}}</td>
+            <td>{{leader}}</td>
+            <td>{{studentCount}}</td>
+            <td>{{tutor}}</td>
+            <td>{{year}}</td>
+            <td>{{schoolName}}</td>
+            <td>{{prelim}}</td>
+
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    <div id="page" class="pagination" data-name= {{length}}></div>
+  </div>
+</div>
+
+</div>

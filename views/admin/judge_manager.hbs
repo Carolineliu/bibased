@@ -1,0 +1,75 @@
+{{!< default}}
+{{#contentFor 'adminPageStyles'}}
+  <link rel="stylesheet" href="../css/admin/judge_manager.css">
+  <script type="text/javascript" src="../js/admin/judge_manager.js"></script>
+{{/contentFor}}
+
+<div class="judge">
+  <table class="judgeContent">
+    <thead id="judgeContents">
+      <tr>
+        <th data-name="judgeId">教师编号</th>
+        <th data-name="judgeName">用户名</th>
+        <th data-name="trueName">真实姓名</th>
+        <th data-name="judgePassword">密码</th>
+        <th data-name="gender">性别</th>
+        <th data-name="age">年龄</th>
+        <th data-name="school">学校</th>
+        <th data-name="profession">职称</th>
+        <th data-name="email">邮箱</th>
+        <th data-name="telephone">电话</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each judges}}
+        <tr>
+          <td>{{judgeId}}</td>
+          <td>{{judgeName}}</td>
+          <td>{{trueName}}</td>
+          <td>{{judgePassword}}</td>
+          <td>{{gender}}</td>
+          <td>{{age}}</td>
+          <td>{{school}}</td>
+          <td>{{profession}}</td>
+          <td>{{email}}</td>
+          <td>{{telephone}}</td>
+          <td class="deletes" data-name= {{judgeId}}>删除</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+
+  <table class="addJudges">
+    <tr>
+      <td>教师编号：
+        <input type="text" id="judgeId" name="judgeId">
+      </td>
+      <td>用户名：
+        <input type="text" id="judgeName" name="judgeName">
+      </td>
+      <td>
+        真实姓名：
+        <input type="text" id="trueName" name="trueName">
+      </td>
+      <td>密码：
+        <input type="text" id="judgePassword" name="judgePassword">
+      </td>
+    </tr>
+    <tr>
+      <td>学校：
+        <input type="text" id="school" name="school">
+      </td>
+      <td>职称：
+        <input type="text" id="professions" name="professions">
+      </td>
+      <td>专业方向：
+        <input type="text" id="profession" name="profession">
+      </td>
+    </tr>
+  </table>
+
+  <a class="submit">提交</a>
+
+
+</div>

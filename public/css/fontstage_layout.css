@@ -1,0 +1,127 @@
+  .header {
+    margin: 0 auto;
+    height: 70px;
+    background: url(../images/nav.jpg) repeat-x;
+  }
+  .state{
+    display: none;
+  }
+  .subreg {
+    background: url(../images/header.jpg) repeat-x;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 162px;
+  }
+  .dropdown-menu li{
+    background: white;
+  }
+  .loginSuccess {
+    background: url(../images/header.jpg) repeat-x;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 172px;
+  }
+  .loginInfo {
+    float: right;
+    margin-right: 200px;
+  }
+  .loginInfo a {
+    text-decoration: none;
+  }
+  .loginInfo .settings {
+    margin-left: 26px;
+  }
+  .loginInfo ul {
+    float: right;
+    height: 35px;
+    line-height: 35px;
+  }
+  .loginInfo .nav>li>a {
+    padding: 0px 10px;
+  }
+  .loginInfo a span {
+    float: right;
+    margin: 15px 0 0 8px;
+  }
+  .subreg label {
+    font-size: 12px;
+    color: #888888;
+    margin-left: 8px;
+  }
+  .subreg .info {
+    color: red;
+    font-size: 14px;
+  }
+  .subreg a {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #888888;
+  }
+  .subreg input {
+    border: 1px solid #abadb3;
+    height: 22px;
+    width: 150px;
+    line-height: 22px;
+    padding: 1px;
+  }
+  .subreg .submit {
+    background: url(../images/nav.jpg);
+    width: 55px;
+    height: 22px;
+    border-radius: 1px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  .logo {
+    float: left;
+    width: 400px;
+    height: 70px;
+    color: white;
+    line-height: 70px;
+    text-indent: 200px;
+    font-size: 20px;
+  }
+  .logo a {
+    color: white;
+    cursor: pointer;
+  }
+  .logo a:hover {
+    text-decoration: none;
+  }
+  .header .navsContent {
+    float: left;
+    display: block;
+    height: 70px;
+  }
+  .header .navsContent li {
+    float: left;
+    list-style: none;
+  }
+  .header .navsContent li a, .header .navsContent li a:visited {
+    line-height: 70px;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 12px 20px;
+    color: white;
+    font-size: 16px;
+  }
+  .container {
+    width: 100%;
+    background: url(../../images/bg.jpg) repeat-x #FFF left top
+  }
+  .important {
+    color: yellow;
+  }
+  .footer {
+    background: #dadada;
+    height: 80px;
+    width: 100%;
+    margin-top: 24px;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .tag {
+    background: url(../../images/open.gif) no-repeat left center right;
+    text-decoration: none;
+  }

@@ -1,0 +1,83 @@
+.forumBg {
+  width: 1100px;
+  background: lightBlue;
+  margin: 0 auto;
+}
+.forumContent {
+  height: 500px;
+  margin: 0 auto;
+
+  border: 1px solid #9a9a9a;
+}
+.forumSesrch {
+  position: fixed;
+  top: 90px;
+  right: 150px;
+}
+.forumDiv {
+  border: 1px dotted #e4e6eb;
+  display: inline-block;
+  list-style: none;
+  width: 1000px;
+  margin-left: 10px;
+}
+.forumDivContent {
+  padding: 10px 20px;
+}
+.forumReply {
+  float: left;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: white;
+  /*margin-left: -20px;*/
+}
+.forumAll {
+  margin-left: 50px;
+  float: left;
+  width: 800px;
+}
+.forumTitle, .forumTheme {
+  float: left;
+  width: 460px;
+  height: 30px;
+  font-size: 18px;
+  overflow: hidden;
+}
+.forumTheme {
+  font-size: 16px;
+  color: gray;
+}
+.forumTitle a {
+  text-decoration: none;
+  color: blue;
+}
+.forumAuthor, .forumLastReply {
+  float: left;
+  width: 165px;
+  height: 30px;
+  margin-left: 100px;
+  font-size: 16px;
+  color: #999;
+  text-overflow: ellipsis;
+}
+.forumPublish {
+  margin-left: 50px;
+  width: 700px;
+}
+.forumPublish table {
+  margin-left: 30px;
+}
+.forumPublish table tr {
+  height: 50px;
+}
+.publishTitle {
+  width: 580px;
+}
+.publishSubmit{
+  height: 38px;
+  width: 70px;
+  color: white;
+  background: blue;
+}

@@ -1,0 +1,92 @@
+{{!< ../layout/fontstage_layout}}
+
+{{#contentFor 'fontstagePageStyles'}}
+  <link rel="stylesheet" href="../css/user/online_registration.css">
+  <script type="text/javascript" src="../js/user/online_registration.js"></script>
+{{/contentFor}}
+<div class="OnlineRegistration">
+  <div class="OnlineRegistrationHeader">
+    <span class="fillInfos">填写报名信息</span>
+  </div>
+
+
+  {{#if status}}
+    <div class="OnlineRegistrationContent">
+      <table>
+        <tr>
+          <td class="word">作品名称:</td>
+          <td>
+            <input type="text" id="contestName">
+          </td>
+        </tr>
+        <tr>
+          <td class="word">学校名称:</td>
+          <td>
+            <select id="schoolName" class="form-control">
+              {{#each schools}}
+                <option> {{schoolName}}</option>
+              {{/each}}
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="word">项目负责人姓名:</td>
+          <td>
+            <input type="text" id="leader">
+          </td>
+        </tr>
+        <tr>
+          <td class="word">负责人电话:</td>
+          <td>
+            <input type="text" id="leaderTel">
+          </td>
+        </tr>
+
+        <tr>
+          <td class="word">其他成员姓名:</td>
+          <td>
+            <input type="text" id="studentCount" placeholder="成员姓名以逗号隔开">
+          </td>
+
+        </tr>
+        <tr>
+          <td class="word">成员电话:</td>
+          <td>
+            <input type="text" id="studentTel" placeholder="填写一位成员电话">
+          </td>
+        </tr>
+        <tr>
+          <td class="word">指导老师姓名:</td>
+          <td>
+            <input type="text" id="tutor" placeholder="老师姓名以逗号隔开">
+          </td>
+        </tr>
+
+        <tr>
+          <td class="word">项目简介:</td>
+          <td>
+            <textarea rows="3" cols="90" id="intro"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td class="word">详细介绍:</td>
+          <td>
+            <textarea rows="5" id="introduce" cols="90"></textarea>
+          </td>
+        </tr>
+      </table>
+
+    </div>
+
+    <div class="onlineSubmit">
+      <input type="submit" class="submit_message" value="提交">
+    </div>
+
+  {{else}}
+    <div class="firstSubmit">
+      <span><a href="login">登录</a>后才能加入比赛</span>
+    </div>
+  {{/if}}
+
+
+</div>

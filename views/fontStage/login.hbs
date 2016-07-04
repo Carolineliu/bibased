@@ -1,0 +1,41 @@
+{{!< ../layout/fontstage_layout}}
+
+{{#contentFor 'fontstagePageStyles'}}
+  <link rel="stylesheet" href="../css/user/login.css">
+  <script type="text/javascript" src="../js/user/login.js"></script>
+{{/contentFor}}
+
+
+<div id="userLogin">
+
+  <div class="userLoginHeader">
+    <h2>登录</h2>
+    <p>
+      还没有账号？<a href="register">注册</a>
+    </p>
+  </div>
+
+  <table class="userLoginContent">
+    <tr>
+      <td class="userLoginWord">用户名</td>
+      <td>
+        <input type="text" class="loginFill" id="userName" name="userName">
+      </td>
+    </tr>
+    <tr>
+      <td class="userLoginWord">密码</td>
+      <td>
+        <input type="password" class="loginFill" id="userPass" name="userPass">
+      </td>
+    </tr>
+  </table>
+  <a href="findPassword" class="forgetMe">忘记密码了？</a>
+
+
+  <div class="info"></div>
+
+
+  <input type="button" class="userSubmit" value="登录" />
+
+
+</div>

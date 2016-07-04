@@ -1,0 +1,58 @@
+{{!< ../layout/fontstage_layout}}
+
+{{#contentFor 'fontstagePageStyles'}}
+  <link rel="stylesheet" href="../css/user/forum.css">
+  <script type="text/javascript" src="../js/user/forum.js"></script>
+{{/contentFor}}
+
+<div class="forumBg">
+
+  <!-- <div class="forumSesrch">
+    <input type="text" class="form-control" id="search" placeholder="搜索">
+  </div> -->
+
+  <div>
+    <ul class="forumContent">
+      <li class="forumDiv">
+        <div class="forumDivContent">
+          <div class="forumReply">
+            <span title="回复">5{{ 回复数 }}
+            </span>
+          </div>
+          <div class="forumAll">
+            <div class="forumTitle">
+              <a href="">casdfasdf</a></div>
+            <div class="forumAuthor">
+              作者
+            </div>
+            <div class="forumTheme">主题</div>
+            <div class="forumLastReply">回复人</div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="forumPublish">
+    <table>
+      <tr>
+        <th>
+          <input type="text" class="publishTitle" placeholder="请填写标题">
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <textarea class="publishContent" rows="5" cols="70"></textarea>
+      </tr>
+      <tr>
+        <td>
+          <input class="publishSubmit" id="publishSubmit" type="button" value="发帖">
+        </td>
+      </tr>
+    </table>
+
+
+  </div>
+
+
+</div>

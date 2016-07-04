@@ -1,0 +1,58 @@
+{{!< default}}
+{{#contentFor 'adminPageStyles'}}
+  <link rel="stylesheet" href="../css/admin/user_manager.css">
+  <script type="text/javascript" src="../js/admin/user_manager.js"></script>
+{{/contentFor}}
+
+<div class="user">
+  <div class="userHeader">
+    用户管理
+  </div>
+
+  <div class="userTableHeader">
+    <i class="icon-user"></i> 用户列表
+    <a href="#" class="tools">
+      <i class="icon-trash"></i>删除
+    </a>
+  </div>
+
+
+
+  <div class="userTable">
+    <table class="userContent">
+      <thead id="userContents">
+        <tr>
+          <th>
+            <input type="checkbox" id="allSelect">
+          </th>
+          <th data-name="userId">用户编号</th>
+          <th data-name="userName">用户名</th>
+          <th data-name="name">姓名</th>
+          <th data-name="gender">性别</th>
+          <th data-name="email">邮箱</th>
+          <th data-name="telephone">电话</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each users}}
+          <tr>
+            <td>
+              <input type="checkbox" class="select" data-name= {{userId}}>
+            </td>
+            <td>{{userId}}</td>
+            <td>{{userName}}</td>
+            <td>{{name}}</td>
+            <td>{{gender}}</td>
+            <td>{{email}}</td>
+            <td>{{telephone}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    <div id="page" class="pagination" data-name={{length}}>
+      <span class="current prev">&lt; 上一页</span>
+      <span class="current">1</span>
+      <span class="current next">下一页 &gt;</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+{{!< default}}
+{{#contentFor 'adminPageStyles'}}
+  <link rel="stylesheet" href="../css/admin/competition_time.css">
+  <script type="text/javascript" src="../js/admin/competition_time.js"></script>
+{{/contentFor}}
+
+<div class="competitionTime">
+  <div class="competitionTimeHeader">
+    <span>比赛时间设定</span>
+  </div>
+
+  <div class="competitionTimeSecondHeader">
+    <i class="icon-calendar"></i>时间设置
+  </div>
+
+  <div class="info">如果不设定日期，默认为去年日期</div>
+  <table>
+    <tr>
+      <td>比赛报名开始时间:
+        <input type="date" class="applyBegin" value="2016-08-31">
+      </td>
+      <td>比赛报名结束时间:
+        <input type="date" class="applyOver" value= {{applyOver}}>
+      </td>
+    </tr>
+    <tr>
+      <td>初赛开始时间:
+        <input type="date" class="prelimBegin" value= {{prelimBegin}}>
+      </td>
+      <td>初赛结束时间:
+        <input type="date" class="prelimOver" value= {{prelimOver}}>
+      </td>
+    </tr>
+    <tr>
+      <td>复赛开始时间:
+        <input type="date" class="finalBegin" value= {{finalBegin}}>
+      </td>
+      <td>复赛结束时间:
+        <input type="date" class="finalOver" value= {{finalOver}}>
+      </td>
+    </tr>
+    <tr>
+      <td>公布成绩时间:
+        <input type="date" class="submitOver" value= {{submitOver}}>
+      </td>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+
+
+
+  <input type="submit" class="releaseCompetitionTime" value="设置时间">
+
+
+</div>

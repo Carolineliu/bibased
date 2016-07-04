@@ -1,0 +1,47 @@
+{{!< default}}
+{{#contentFor 'adminPageStyles'}}
+  <link rel="stylesheet" href="../css/admin/kindeditor.css">
+  <script type="text/javascript" src="../jquery/jquery-form.js"></script>
+  <script type="text/javascript" src="../kindeditor/kindeditor-all-min.js"></script>
+  <script type="text/javascript" src="../js/admin/kindeditor.js"></script>
+{{/contentFor}}
+
+
+<div class="noticeForm">
+  <div class="noticeFormHeader">
+    <span class="noticeWord">发布新闻和公告</span>
+  </div>
+
+  <div class="newsNoticeInfo">
+    <i class="icon-file-text"></i> 编辑内容
+  </div>
+
+  <div class="newsNoticeContent">
+    <div class="noticeTitle">
+      <span>标题:</span>
+      <input type="text" placeholder="请输入标题" id="noticeTitle" value="{{notice.noticeTitle}}">
+    </div>
+
+    <div class="noticeType">
+      <span>类型:</span>
+
+      <select id="noticeType" class="form-control">
+        <option> 公告</option>
+        <option> 新闻</option>
+      </select>
+    </div>
+
+    <div class="noticeContent">
+
+      <span>文章内容</span>
+      <div id="form_content">
+        <textarea id="noticeContent" name="noticeContent" style="width:1000px;min-height:300px;">{{notice.noticeContent}}
+
+        </textarea>
+        <div style="display:none" id="getNoticeId">{{noticeId}}</div>
+        <span id="form_msg" style="display:none;"></span>
+        <input type="submit" value="提交" id="submitButton" />
+      </div>
+    </div>
+  </div>
+</div>

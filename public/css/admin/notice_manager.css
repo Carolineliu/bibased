@@ -1,0 +1,74 @@
+.noticeManager {
+  width: 100%;
+}
+.noticeManagerHeader {
+  padding: 0px;
+  font-size: 30px;
+  letter-spacing: -1px;
+  display: block;
+  color: #666;
+  margin: 20px 0px 15px 0px;
+  font-weight: 300;
+}
+.noticeTableHeader {
+  background: #aaa;
+  padding: 8px 10px 8px 10px;
+  border-bottom: 1px solid #eee;
+  color: #fff;
+}
+.noticeTableHeader i {
+  color: white;
+}
+.noticeTableHeader .tools {
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  float: right;
+  padding: 2px;
+  margin-right: 10px;
+  background: #d8d8d8;
+  margin-top: -1px;
+}
+.settingNotice{
+  position: relative;
+}
+.settingNotice .noticeSetting {
+  color: black;
+  text-decoration: none;
+}
+.pull-right {
+  color: black;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+}
+.noticeTableHeader a i {
+  color: black;
+  padding-right: 4px;
+}
+.noticeTableContent {
+  border: 1px solid #eee;
+  min-height: 400px;
+}
+.noticeTableContent table {
+  color: black;
+  border-collapse: collapse;
+  width: 96%;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  margin: 20px auto;
+}
+.noticeTableContent table th {
+  height: 30px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.noticeTableContent table td {
+  border: 1px solid #ddd;
+  height: 30px;
+}
+.noticeTableContent table tbody>tr:nth-child(odd) {
+  background: #F4F4F4;
+}

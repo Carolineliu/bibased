@@ -1,0 +1,21 @@
+.newsDetail {
+  width: 1000px;
+  margin: 0px auto;
+  background: white;
+  min-height: 600px;
+}
+.newsDetailHeader{
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom:10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+}
+.newsTime{
+  font-size: 12px;
+  margin-top: 10px;
+}
+.newsDetailContent {
+  width: 1000px;
+  padding-top: 30px;
+}

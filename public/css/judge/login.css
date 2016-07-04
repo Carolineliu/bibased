@@ -1,0 +1,27 @@
+#judgeLogin {
+  height: 500px;
+  width: 700px;
+  margin: 60px auto;
+  padding-top: 20px;
+}
+.word {
+  text-align: center;
+}
+table {
+  margin: 0 auto;
+}
+table tr {
+  height: 38px;
+}
+table td {
+  width: 50px;
+}
+.info {
+  text-align: center;
+  margin: 10px auto -2px;
+  font-size: 18px;
+  color: red;
+}
+#submit input {
+  margin: 10px 0 0 340px;
+}

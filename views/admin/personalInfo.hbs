@@ -1,0 +1,41 @@
+{{!< default}}
+{{#contentFor 'adminPageStyles'}}
+  <link rel="stylesheet" href="../css/admin/personalInfo.css">
+  <script type="text/javascript" src="../js/admin/personalInfo.js"></script>
+{{/contentFor}}
+
+
+<div class="personalInfo">
+  <div class="personalInfoHeader">
+    <span>查看个人信息
+    </span>
+  </div>
+
+  <div class="personalInfoTableHeader">
+    <i class="icon-user"></i> 个人信息
+    </a>
+  </div>
+
+<div class="personalInfoContent">
+  <table>
+    <tr>
+      <td class="personalInfoWord">管理员编号：</td>
+      <td>{{personalInfos.adminId}}</td>
+    </tr>
+    <tr>
+      <td class="personalInfoWord">姓名：</td>
+      <td>{{personalInfos.adminName}}</td>
+    </tr>
+    <tr>
+      <td class="personalInfoWord">身份证号码：</td>
+      <td>{{personalInfos.idCard}}</td>
+    </tr>
+    <tr>
+      <td class="personalInfoWord">电话号码：</td>
+      <td><input type="text" class="personalInfoTel"
+        value={{personalInfos.telephone}} > </td>
+    </tr>
+  </table>
+  <input type="submit" class="personalInfoSubmit" value="修改">
+</div>
+</div>

@@ -1,0 +1,69 @@
+.noticeForm {
+  width: 100%;
+}
+.noticeFormHeader {
+  padding: 0px;
+  font-size: 30px;
+  letter-spacing: -1px;
+  display: block;
+  color: #666;
+  margin: 20px 0px 15px 0px;
+  font-weight: 300;
+}
+.newsNoticeInfo {
+  background: #aaa;
+  padding: 8px 10px 8px 10px;
+  border-bottom: 1px solid #eee;
+  color: #fff;
+}
+.newsNoticeInfo i {
+  color: white;
+}
+.newsNoticeContent {
+  border: 1px solid #eee;
+  min-height: 400px;
+  margin-bottom: 20px;
+}
+.noticeTitle {
+  margin: 20px 0 10px 20px;
+  font-size: 14px;
+  float: left;
+}
+.noticeType {
+  margin: 18px 0 10px 10px;
+  float: left;
+}
+.noticeType span {
+  margin-left: 60px;
+  float: left;
+  height: 32px;
+  line-height: 32px;
+}
+#noticeTitle {
+  height: 30px;
+  margin-left: 10px;
+  width: 300px;
+}
+#noticeType {
+  margin-left: 10px;
+  width: 130px;
+  float: left;
+  padding: 0 12px;
+  height: 32px;
+}
+.noticeContent {
+  margin-top: 80px;
+  margin-left: 20px;
+}
+#form_msg{
+  display: block;
+  margin-top: 20px;
+}
+#submitButton {
+  background: green;
+  color: white;
+  height: 40px;
+  width: 100px;
+  border: none;
+  margin: 20px;
+}

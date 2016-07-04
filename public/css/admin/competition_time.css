@@ -1,0 +1,51 @@
+.competitionTime {
+  width: 100%;
+}
+.competitionTimeHeader{
+  padding: 0px;
+  font-size: 30px;
+  letter-spacing: -1px;
+  display: block;
+  color: #666;
+  margin: 20px 0px 15px 0px;
+  font-weight: 300;
+}
+.competitionTimeSecondHeader {
+  background: #aaa;
+  padding: 8px 10px 8px 10px;
+  border-bottom: 1px solid #eee;
+  color: #fff;
+}
+.competitionTimeSecondHeader i {
+  color: white;
+  margin-right: 3px;
+}
+.info {
+  color: green;
+  font-size: 16px;
+  margin: 20px auto;
+  text-indent: 20px;
+}
+.competitionTime table {
+  color: #005980;
+  border-collapse: collapse;
+  width: 900px;
+  text-align: right;
+  margin-top: 20px;
+  margin-left: -100px;
+}
+.competitionTime table tr {
+  height: 38px;
+}
+.competitionTime table td input {
+  width: 200px;
+}
+.releaseCompetitionTime {
+  border: none;
+  color: white;
+  width: 90px;
+  height: 30px;
+  background: green;
+  margin-left: 180px;
+  margin-top: 20px;
+}

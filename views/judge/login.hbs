@@ -1,0 +1,38 @@
+{{!< html_struct}}
+{{#contentFor 'pageStyles'}}
+  <link rel="stylesheet" href="../css/judge/login.css">
+  <script type="text/javascript" src="../js/judge/login.js"></script>
+{{/contentFor}}
+
+
+
+<div id="judgeLogin">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <label class="word">欢迎</label>
+    </div>
+
+    <div class="panel-body">
+
+      <table>
+        <tr>
+          <td>用户名</td>
+          <td>
+            <input type="text" id="judgeName" class="judgeName">
+          </td>
+        </tr>
+        <tr>
+          <td>密码</td>
+          <td>
+            <input type="password" id="password" class="password">
+          </td>
+        </tr>
+      </table>
+
+      <div class="info"></div>
+
+      <div id="submit">
+        <input type="button" class="submit" value="登录" />
+      </div>
+
+    </div>

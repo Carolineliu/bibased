@@ -1,0 +1,36 @@
+{{!< default}}
+{{#contentFor 'judgePageStyles'}}
+  <link rel="stylesheet" href="../css/judge/home_page.css">
+  <script type="text/javascript" src="../js/judge/home_page.js"></script>
+{{/contentFor}}
+
+
+<div class="judgeContest">
+  <table class="judgeContent">
+    <thead id="judgeContents">
+      <tr>
+        <th>id</th>
+        <th data-name="type">类型</th>
+        <th data-name="contestName">项目名</th>
+        <th data-name="downloadUrl"></th>
+        <th data-name="contestScore">打分</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each contests}}
+        <tr>
+          <td data-name= {{contestId}} class="contestId">{{contestId}}</td>
+          <td>{{type}}</td>
+          <td>{{contestName}}</td>
+          <td><a href="#" class="download">下载
+          <td class="score"><input type="text" class="scoreFill"></td>
+          <!-- <td class="submit_message"><input type="submit" value="提交" class="submit"></td> -->
+          <!-- <input type="text">
+          <input type="submit"> -->
+        </td>
+
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>

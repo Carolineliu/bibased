@@ -1,0 +1,47 @@
+.personalInfo {
+  width: 100%;
+}
+.personalInfoHeader {
+  padding: 0px;
+  font-size: 30px;
+  letter-spacing: -1px;
+  display: block;
+  color: #666;
+  margin: 20px 0px 15px 0px;
+  font-weight: 300;
+}
+.personalInfoTableHeader {
+  background: #aaa;
+  padding: 8px 10px 8px 10px;
+  border-bottom: 1px solid #eee;
+  color: #fff;
+}
+.personalInfoTableHeader i {
+  color: white;
+}
+.personalInfo table {
+  margin: 30px 0 0 36px;
+}
+.personalInfo.personalInfoWord{
+  text-align: right;
+}
+.personalInfo table tr {
+  text-indent: 10px;
+  text-align: center;
+  height: 30px;
+}
+.personalInfo .personalInfoWord{
+  width: 100px;
+  text-align: right;
+}
+.personalInfoTel{
+  text-align: center;
+}
+.personalInfoSubmit{
+  width: 80px;
+  height: 30px;
+  border: none;
+  background: green;
+  margin: 10px 180px;
+  color: white;
+}

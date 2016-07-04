@@ -1,0 +1,101 @@
+.container {
+  background: white;
+  width: 1200px;
+  margin: 0 auto;
+}
+.contestsTypeName h3 {
+  line-height: 30px;
+  height: 30px;
+  color: #010101;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: left;
+}
+.contestContent, .contestShow {
+  border-top: 1px solid #d0d6d9;
+  border-bottom: 1px solid #d0d6d9;
+}
+.contestSchool {
+  padding: 15px 0 5px;
+}
+.contestYear{
+  padding-bottom: 20px;
+}
+.years{
+  margin-left: 12px;
+}
+.contestTypeword,.awardName{
+  float: left;
+  width: 56px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #787d82;
+  text-align: right;
+}
+.contestsType {
+  display: inline-block;
+  margin: 0 13px;
+}
+.contestsType a {
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 6px;
+  font-size: 14px;
+  text-decoration: none;
+  color: green;
+}
+.open {
+  color: white;
+  background: #f01400;
+}
+.everyPicture {
+  margin: 16px 12px 10px;
+  display: inline-block;
+  height: 200px;
+  width: 250px;
+  text-overflow: ellipsis;
+}
+.everyPicture a {
+  display: inline-block;
+  height: 300px;
+  width: 250px;
+}
+.everyPicture img {
+  width: 250px;
+  height: 230px;
+}
+.everyPicture h3 {
+  text-align: center;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.everyPicture a:hover {
+  text-decoration: none;
+}
+.pagination {
+  margin-left: 660px;
+}
+.pagination a {
+  text-decoration: none;
+  border: 1px solid #AAE;
+  color: #15B;
+}
+.pagination a, .pagination span {
+  display: inline-block;
+  padding: 0.1em 0.4em;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.pagination .current {
+  background: #26B;
+  color: #fff;
+  border: 1px solid #AAE;
+}
+.pagination .current.prev, .pagination .current.next {
+  color: #999;
+  border-color: #999;
+  background: #fff;
+}

@@ -1,0 +1,49 @@
+a{
+  text-decoration: none;
+}
+.judgeContent {
+  border-collapse: collapse;
+  width: 980px;
+  text-align: center;
+  margin-left: -5px;
+}
+.judgeContent th {
+  text-align: center;
+}
+.judgeContent td {
+  border: 1px solid #ddd;
+  border-left: none;
+  border-right: none;
+}
+.judgeContent tbody>tr:nth-child(odd) {
+  background: #F4F4F4;
+}
+.judgeContent thead {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.addJudges {
+  margin: 20px 0;
+}
+.addJudges tr {
+  height: 60px;
+}
+.addJudges td {
+  width: 200px;
+}
+.submit{
+  height: 30px;
+  width: 80px;
+  margin-left: 330px;
+  line-height: 30px;
+  text-align: center;
+  display: inline-block;
+  background: red;
+  color: white;
+}
+.submit:hover{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  background: #c4c3c2;
+}

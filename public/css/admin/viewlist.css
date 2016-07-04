@@ -1,0 +1,93 @@
+.viewlist {
+  width: 100%；
+}
+.viewlistHeader {
+  padding: 0px;
+  font-size: 30px;
+  letter-spacing: -1px;
+  display: block;
+  color: #666;
+  margin: 20px 0px 15px 0px;
+  font-weight: 300;
+}
+.viewlistTableHeader {
+  background: #aaa;
+  padding: 8px 10px 8px 10px;
+  border-bottom: 1px solid #eee;
+  color: #fff;
+}
+.viewlistTableHeader i {
+  color: white;
+}
+.viewlistTableHeader a {
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  float: right;
+  padding: 2px;
+  margin-right: 10px;
+  background: #d8d8d8;
+  margin-top: -1px;
+}
+.viewlistTableHeader a i {
+  color: black;
+  padding-right: 4px;
+}
+.viewlistContent {
+  border: 1px solid #eee;
+  min-height: 400px;
+}
+.viewlistContent table {
+  color: black;
+  border-collapse: collapse;
+  width: 96%;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  margin: 20px auto;
+}
+.viewlistContent table th {
+  text-align: center;
+  border: 1px solid #ddd;
+  height: 30px;
+}
+.viewlistContent table td {
+  border: 1px solid #ddd;
+  height: 30px;
+}
+.viewlistContent table tbody>tr:nth-child(odd) {
+  background: #F4F4F4;
+}
+.viewlistContent .deletes {
+  cursor: pointer;
+}
+.viewlistContent table thead {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.participatingYear .years {
+  margin-left: 10px;
+}
+.pagination {
+  margin-left: 660px;
+}
+.pagination a {
+  text-decoration: none;
+  border: 1px solid #AAE;
+  color: #15B;
+}
+.pagination a, .pagination span {
+  display: inline-block;
+  padding: 0.1em 0.4em;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.pagination .current {
+  background: #26B;
+  color: #fff;
+  border: 1px solid #AAE;
+}
+.pagination .current.prev, .pagination .current.next {
+  color: #999;
+  border-color: #999;
+  background: #fff;
+}

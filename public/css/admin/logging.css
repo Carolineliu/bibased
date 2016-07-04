@@ -1,0 +1,48 @@
+.model {
+  width: 100%;
+}
+.modelManagerHeader {
+  padding: 0px;
+  font-size: 30px;
+  letter-spacing: -1px;
+  display: block;
+  color: #666;
+  margin: 20px 0px 15px 0px;
+  font-weight: 300;
+}
+.uploadModel {
+  margin-top: 50px;
+}
+.downloadModelHeader, .uploadModelHeader {
+  background: #aaa;
+  padding: 8px 10px 8px 10px;
+  border-bottom: 1px solid #eee;
+  color: #fff;
+}
+.downloadModelHeader i, .uploadModelHeader i {
+  color: white;
+}
+.downloadModelContent, .uploadModelContent {
+  border: 1px solid #eee;
+}
+.downloadModelContent, .uploadModelContent {
+  color: gray;
+  padding-left: 20px;
+}
+.downloadModelContent a, .uploadModelContent a {
+  padding: 10px;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  color: #005980;
+}
+.uploadModelContent input[type="file"] {
+  position: absolute;
+  opacity: 0;
+  top: 10px;
+  left:-10px;
+}
+.submits {
+  color: black;
+  margin-left: 60px;
+}

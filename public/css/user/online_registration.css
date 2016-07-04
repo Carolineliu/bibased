@@ -1,0 +1,87 @@
+.OnlineRegistration {
+  width: 1000px;
+  margin: 0px auto;
+  background: white;
+  min-height: 600px;
+}
+.OnlineRegistrationHeader {
+  background: url(../../images/head_bg.png) repeat-x;
+  margin-top: 10px;
+}
+#schoolName {
+  width: 140px;
+}
+.OnlineRegistration .fillInfos {
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 28px;
+  color: #2E688D;
+}
+.OnlineRegistrationTime {
+  height: 60px;
+  border: 1px solid #d0d6d9;
+}
+.OnlineRegistrationTime span {
+  line-height: 60px;
+  padding-left: 30px;
+  font-size: 16px;
+  color: orange;
+}
+.firstSubmit {
+  height: 60px;
+  border: 1px solid #d0d6d9;
+}
+.firstSubmit span {
+  line-height: 60px;
+  padding-left: 30px;
+  font-size: 16px;
+  color: orange;
+}
+.firstSubmit a {
+  text-decoration: none;
+}
+.OnlineRegistrationContent table {
+  margin-left: 30px;
+}
+.OnlineRegistrationContent table tr {
+  height: 50px;
+}
+.OnlineRegistrationContent table .word {
+  width: 130px;
+}
+.OnlineRegistrationContent input[type="text"] {
+  width: 240px;
+}
+.judgeContent tr:nth-child(odd) {
+  background: rgb(245, 246, 247);
+}
+.onlineSubmit {
+  margin: 26px auto 0;
+  font-size: 16px;
+  width: 66px;
+}
+.submit_message {
+  border: none;
+  width: 66px;
+  height: 30px;
+  color: white;
+  background: url(../../images/nav.jpg);
+}
+.reset {
+  margin-left: 10px;
+  padding: 4px 17px;
+  display: inline-block;
+  text-decoration: none;
+  color: #5a6270;
+  background: #cfd7e3;
+}
+.reset:hover {
+  text-decoration: none;
+}
+.reset:hover, .reset:focus {
+  background: #dae2ee;
+  color: #5a6270;
+  text-decoration: none;
+}

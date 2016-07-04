@@ -1,0 +1,65 @@
+{{!< ../layout/html_struct}}
+{{#contentFor 'pageStyles'}}
+  <link rel="stylesheet" href="../css/admin/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/admin/default.css">
+  <script type="text/javascript" src="../jquery/jquery.pagination.js"></script>
+  <script type="text/javascript" src="../js/admin/default.js"></script>
+  {{{block 'adminPageStyles'}}}
+{{/contentFor}}
+
+<div class="header">
+
+  <div class="systemName">后台管理系统</div>
+
+  <ul class="nav nav-pills">
+    <li role="presentation" class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        <span class="adminName">admin</span>
+        <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu open">
+        <li><a href="personalInfo" class="myselfInfo">个人信息</a></li>
+        <li><a href="update_password" class="updatePass">修改密码</a></li>
+        <li><a href="#" class="logout">注销</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+
+<div class="content">
+  <div class="contentLeft">
+    <div class="sidebar-toggler hidden-phone"></div>
+    <ul class="contentPanel">
+      <li ><a href="home_page"><i class="icon-home"></i>
+        统计<span class="selected  hide"></span></a></li>
+      <li ><a href="user_manager"><i class="icon-user"></i>用户管理
+      <span class="selected  hide"></span></a></li>
+      <li ><a href="contest_manager"><i class="icon-folder-open"></i>
+        题目管理<span class="selected  hide"></span></a></li>
+      <li ><a href="winners_manager"><i class="icon-gift"></i>获奖人员管理
+      <span class="selected  hide"></span></a></li>
+      <li ><a href="logging"><i class="icon-font"></i>录入成绩
+      <span class="selected hide "></span></a></li>
+      <li ><a href="viewlist"><i class="icon-globe"></i>查看复赛名单
+      <span class="selected hide "></span></a></li>
+      <li > <a href="school_manager"><i class="icon-th"></i>学校管理
+      <span class="selected hide"></span></a></li>
+      <li ><a href="news_manager"><i class="icon-coffee"></i>新闻管理
+      <span class="selected hide"></span></a></li>
+      <li ><a href="notice_manager"><i class="icon-comments"></i>
+       公告管理<span class="selected hide "></span></a></li>
+      <li ><a href="kindeditor"><i class="icon-file-text"></i>
+        发布公告<span class="selected hide"></span></a></li>
+      <li><a href="competition_time"><i class="icon-calendar"></i>
+        设定比赛时间<span ></span></a></li>
+        <!-- <li><a href="staff_manager"><i class="icon-bookmark-empty"></i>
+          学校人员管理</a></li> -->
+    </ul>
+  </div>
+
+  <div class="contentRight">
+    {{{body}}}
+  </div>
+
+</div>

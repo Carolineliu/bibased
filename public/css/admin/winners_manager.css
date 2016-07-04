@@ -1,0 +1,105 @@
+.winnersManager {
+  width: 1050px;
+}
+.contestsTypeName h3 {
+  line-height: 20px;
+  height: 20px;
+  color: #010101;
+  font-weight: 700;
+  font-size: 16px;
+}
+.participatingContent {
+  border-top: 1px solid #d0d6d9;
+  border-bottom: 1px solid #d0d6d9;
+}
+.winners {
+  border-top: 1px solid #d0d6d9;
+}
+.participatingSchool {
+  padding: 15px 0 5px;
+}
+.participatingYear {
+  padding-bottom: 15px;
+}
+.participatingYear .years {
+  margin-left: 14px;
+}
+.participatingSchoolName {
+  float: left;
+  width: 80px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #787d82;
+  text-align: right;
+}
+.participatingTypeName, .awardName {
+  float: left;
+  width: 80px;
+  height: 30px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #787d82;
+  text-align: right;
+}
+.awardType {
+  list-style: none;
+}
+.contestsType {
+  display: inline-block;
+  margin: 0 13px;
+}
+.contestsType a {
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 6px;
+  font-size: 14px;
+  text-decoration: none;
+  color: green;
+}
+.open {
+  background: #f01400;
+}
+.open a {
+  color: white;
+}
+.winners {
+  margin-top: 20px;
+}
+.winnersContent {
+  border-collapse: collapse;
+  width: 1000px;
+  text-align: center;
+  margin: 20px 0 20px 32px;
+}
+.winnersContent th {
+  font-weight: normal;
+  text-align: center;
+  background: white;
+}
+.winnersContent td {
+  border: 1px solid #ddd;
+  border-left: none;
+  border-right: none;
+  height: 30px;
+}
+.winnersContent tbody>tr:nth-child(odd) {
+  background: #F4F4F4;
+}
+#releaseWinners {
+  border: none;
+  width: 80px;
+  height: 30px;
+  color: white;
+  background: green;
+  margin-left: 440px;
+}
+.noResult{
+  display: none;
+  text-align: center;
+  width: 200px;
+  font-size: 18px;
+  margin: 10px auto;
+  color: red;
+}

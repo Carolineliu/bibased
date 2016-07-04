@@ -1,0 +1,18 @@
+{{!< ../layout/fontstage_layout}}
+
+{{#contentFor 'fontstagePageStyles'}}
+  <link rel="stylesheet" href="../css/user/notice_detail.css">
+  <script type="text/javascript" src="../js/user/notice_detail.js"></script>
+{{/contentFor}}
+
+<div class="noticeDetail">
+  <div class="noticeDetailHeader">
+  {{noticeTitle}}
+    <div class="noticeTime">时间：{{noticeTime}}</div>
+
+</div>
+
+  <s:property escape="false" class="noticeContent" value="{{noticeContent}}">
+    <div class="noticeDetailContent" id="noticeDetailContent">
+    </div>
+</div>

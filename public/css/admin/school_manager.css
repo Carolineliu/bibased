@@ -1,0 +1,110 @@
+.school {
+  width: 100%;
+}
+.schoolHeader {
+  padding: 0px;
+  font-size: 30px;
+  letter-spacing: -1px;
+  display: block;
+  color: #666;
+  margin: 20px 0px 15px 0px;
+  font-weight: 300;
+}
+.schoolTableHeader {
+  background: #aaa;
+  padding: 8px 10px 8px 10px;
+  border-bottom: 1px solid #eee;
+  color: #fff;
+}
+.schoolTableHeader i {
+  color: white;
+}
+.schoolTableHeader a {
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  float: right;
+  padding: 2px;
+  margin-right: 10px;
+  background: #d8d8d8;
+  margin-top: -1px;
+}
+.schoolTableHeader a i {
+  color: black;
+  padding-right: 4px;
+}
+.schoolTableContent {
+  border: 1px solid #eee;
+  min-height: 400px;
+}
+.schoolContent {
+  color: black;
+  border-collapse: collapse;
+  width: 96%;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  margin: 20px auto;
+}
+.schoolContent th {
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.schoolContent td {
+  border: 1px solid #ddd;
+}
+.schoolContent tr {
+  height: 30px;
+}
+.schoolContent tbody>tr:nth-child(odd) {
+  background: #F4F4F4;
+}
+.schoolContent thead {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.schoolContent .schoolName {
+  height: 24px;
+  border: none;
+  text-align: center;
+  background: transparent;
+}
+.schoolContent .save {
+  cursor: pointer;
+  background: lightblue;
+  border: none;
+  color: white;
+}
+.addSchoolHeader {
+  background: #aaa;
+  padding: 8px 10px 8px 10px;
+  border-bottom: 1px solid #eee;
+  color: #fff;
+}
+.addSchoolHeader i {
+  color: white;
+}
+.addSchoolContent {
+  padding-top: 10px;
+  border: 1px solid #d9d9d9;
+  height: 80px;
+}
+.addSchool input[type="text"] {
+  width: 210px;
+  margin-left: 8px;
+  margin-top: 15px;
+}
+.addSchool span {
+  margin-left: 40px;
+}
+#addSchool {
+  margin: 0 0 16px 20px;
+  border: none;
+  background: green;
+  color: white;
+  width: 60px;
+  height: 24px;
+}
+#allSelect {
+  padding-top: 2px;
+  background: green;
+}

@@ -1,0 +1,96 @@
+{{!< default}}
+{{#contentFor 'adminPageStyles'}}
+  <link rel="stylesheet" href="../css/admin/winners_manager.css">
+  <script type="text/javascript" src="../js/admin/winners_manager.js"></script>
+{{/contentFor}}
+
+<div class="winnersManager">
+
+  <div class="contestsTypeName">
+    <h3>作品分类</h3>
+  </div>
+
+  <div class="participatingContent" id="participatingContent">
+    <div class="participatingSchool">
+      <span class="participatingSchoolName">学校：</span>
+      <ul class="schools">
+        <li class="contestsType open" id="schools"><a href="#">全部</a></li>
+        {{#each school}}
+          <li class="contestsType" id="schoolSingle"><a href="#">{{this}}</a></li>
+        {{/each}}
+      </ul>
+    </div>
+
+    <div class="participatingYear" id="participatingYear">
+      <span class="participatingTypeName">年份：</span>
+      <select class="years">
+        {{#each year}}
+          <option class="contestsYear">{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+
+    <div class="award">
+      <span class="awardName">奖项：</span>
+      <ul class="awardType">
+        <li class="contestsType open" id="allaward">
+          <a href="#">全部</a>
+        </li>
+        <li class="contestsType" id="firstaward">
+          <a href="#">一等奖</a>
+        </li>
+        <li class="contestsType" id="secondaward">
+          <a href="#">二等奖</a>
+        </li>
+        <li class="contestsType" id="thirdaward">
+          <a href="#">三等奖</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="contestsTypeName">
+    <h3>获奖名单</h3>
+  </div>
+  <div class="winners">
+    <table class="winnersContent">
+      <thead>
+        <tr>
+          <th data-name="contestId">项目编号</th>
+          <th data-name="contestName">项目名称</th>
+          <th data-name="leader">项目负责人</th>
+          <th data-name="studentCount">作者</th>
+          <th data-name="tutor">指导老师</th>
+          <th data-name="year">作品日期</th>
+          <th data-name="school">学校</th>
+          <th data-name="contestScore">总成绩</th>
+          <th>奖项</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each score}}
+          <tr>
+            <td>{{contestId}}</td>
+            <td>{{contestName}}</td>
+            <td>{{leader}}</td>
+            <td>{{studentCount}}</td>
+            <td>{{tutor}}</td>
+            <td>{{year}}</td>
+            <td>{{schoolName}}</td>
+            <td>{{contestScore}}</td>
+            <td>{{isWin}}</td>
+            <td>
+            </td>
+            <td class="deletes" data-name= {{contestId}}>修改</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+
+    <div class="noResult">此次查询没有结果</div>
+  </div>
+  <input type="submit" value="发布" id="releaseWinners">
+
+
+</div>

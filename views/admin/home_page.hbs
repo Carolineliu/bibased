@@ -1,0 +1,65 @@
+{{!< default}}
+{{#contentFor 'adminPageStyles'}}
+  <link rel="stylesheet" href="../css/admin/home_page.css">
+  <script type="text/javascript" src="../js/admin/home_page.js"></script>
+{{/contentFor}}
+
+<div class="homePage">
+  <div class="homePageHeader">
+    统计
+  </div>
+
+  <div class="homePageSecondHeader">
+    <i class="icon-home"></i> 统计
+  </div>
+
+  <div class="allCards">
+
+    <div class="cardContent redCard">
+      <a href="user_manager">
+        <div class="cardDetails">
+          <i class="icon-user"></i>
+          <h2>{{users}}</h2>
+          <h3>用户管理</h3>
+        </div>
+      </a>
+    </div>
+
+    <div class="cardContent blueCard">
+
+      <a href="contest_manager">
+        <div class="cardDetails">
+          <i class="icon-user"></i>
+          <h2>{{contests}}</h2>
+          <h3>项目管理</h3>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="cardContent greenCard">
+
+      <a href="school_manager">
+        <div class="cardDetails">
+          <i class="icon-user"></i>
+          <h2>{{schools}}</h2>
+          <h3>学校管理</h3>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="cardContent yellowCard">
+
+      <a href="news_manager">
+        <div class="cardDetails">
+          <i class="icon-user"></i>
+          <h2>{{news}}</h2>
+          <h3>新闻管理</h3>
+        </div>
+      </a>
+    </div>
+
+
+  </div>
+</div>

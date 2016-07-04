@@ -1,0 +1,38 @@
+{{!< ../layout/fontstage_layout}}
+
+{{#contentFor 'fontstagePageStyles'}}
+  <link rel="stylesheet" href="../css/user/personalInfo.css">
+    <script type="text/javascript" src="../jquery/jquery.validate.js"></script>
+  <script type="text/javascript" src="../js/user/personalInfo.js"></script>
+{{/contentFor}}
+
+<form id="personalInfo">
+<div class="personalInfo">
+  <div class="personalInfoHeader">
+    <span>查看个人信息</span>
+</div>
+
+
+  <table class="personalInfoContent">
+  <tr>
+      <td class="personalWord">用户名:</td>
+      <td><input type="text" name="userName"  id="userName" class="personalInfoUserName" value="{{personalInfos.userName}}"/></td>
+    </tr>
+    <tr>
+      <td class="personalWord">姓名:</td>
+      <td><input type="text" name="name"class="personalInfoName" value="{{personalInfos.name}}"/></td>
+    </tr>
+    <tr>
+      <td class="personalWord">邮箱:</td>
+      <td><input type="text" class="personalInfoEmail" value="{{personalInfos.email}}" disabled="disabled"></td>
+    </tr>
+    <tr>
+      <td class="personalWord">联系电话:</td>
+      <td><input type="text" name="telephone" class="personalInfoTel" value="{{personalInfos.telephone}}"/></td>
+    </tr>
+  </table>
+
+
+  <div class="saveInfos">保存</div>
+</div>
+</form>

@@ -1,0 +1,32 @@
+{{!< ../layout/fontstage_layout}}
+
+{{#contentFor 'fontstagePageStyles'}}
+  <link rel="stylesheet" href="../css/user/schedule.css">
+  <script type="text/javascript" src="../js/user/schedule.js"></script>
+{{/contentFor}}
+
+
+<div class="schedule">
+  <table>
+    <tr>
+      <td class="word">项目编号:</td>
+      <td>{{contestId}}</td>
+    </tr>
+    <tr>
+      <td class="word">项目名:</td>
+      <td>{{contestName}}</td>
+    </tr>
+    <tr>
+      <td class="word">参与者:</td>
+      <td>{{studentCount}}</td>
+    </tr>
+    <tr>
+      <td class="word">指导老师:</td>
+      <td>{{tutor}}</td>
+    </tr>
+    <tr>
+      <td class="year">年份:</td>
+      <td class="year">{{year}}</td>
+    </tr>
+  </table>
+</div>

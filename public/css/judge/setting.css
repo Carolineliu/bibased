@@ -1,0 +1,22 @@
+#judgeSetting {
+  height: 500px;
+  width: 700px;
+  margin: 30px auto;
+}
+table {
+  margin: 0 auto;
+}
+table tr {
+  height: 38px;
+}
+table td {
+  width: 100px;
+}
+.info {
+  margin: 10px 0 0 300px;
+  font-size: 14px;
+  color: red;
+}
+.submit {
+  margin: 12px 300px;
+}

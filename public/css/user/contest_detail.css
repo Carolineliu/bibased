@@ -1,0 +1,37 @@
+.contestDetail {
+  width: 1000px;
+  min-height: 600px;
+  margin: 0px auto;
+  background: white;
+}
+.contestDetailHeader {
+  background: url(../../images/head_bg.png) repeat-x;
+  margin-top: 10px;
+}
+.contestDetail span {
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 28px;
+  color: #2E688D;
+}
+.contestDetailContent table {
+  margin: 18px 20px 0;
+  text-indent: 10px;
+}
+.contestDetailContent table tr {
+  height: 30px;
+}
+.contestDetailContent tr:nth-child(odd) {
+  background: #F4F4F4;
+}
+.contestDetailContent table td {
+  width: 830px;
+}
+.contestDetailContent table .word {
+  width: 130px;
+}
+.contestDetailContent input[type="text"] {
+  width: 240px;
+}

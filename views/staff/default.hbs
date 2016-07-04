@@ -1,0 +1,47 @@
+{{!< ../layout/html_struct}}
+{{#contentFor 'pageStyles'}}
+  <link rel="stylesheet" href="../css/admin/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/staff/default.css">
+  <script type="text/javascript" src="../jquery/jquery.pagination.js"></script>
+  <script type="text/javascript" src="../js/staff/default.js"></script>
+  {{{block 'staffPageStyles'}}}
+{{/contentFor}}
+
+
+
+<div class="header">
+
+  <div class="systemName">大学生科技竞赛系统</div>
+
+  <ul class="nav nav-pills">
+    <li role="presentation" class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        <span class="adminName">admin</span>
+        <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu open">
+        <li><a href="personalInfo" class="myselfInfo">个人信息</a></li>
+        <li><a href="update_password" class="updatePass">修改密码</a></li>
+        <li><a href="#" class="logout">注销</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+
+<div class="content">
+  <div class="contentLeft">
+    <div class="sidebar-toggler hidden-phone"></div>
+    <ul class="contentPanel">
+      <li ><a href="home_page"><i class="icon-home"></i>
+        统计<span class="selected  hide"></span></a></li>
+      <li ><a href="../fontStage/home_page"><i class="icon-font"></i>
+      回到首页<span class="selected hide "></span></a></li>
+    </ul>
+  </div>
+
+  <div class="contentRight">
+    {{{body}}}
+  </div>
+
+</div>

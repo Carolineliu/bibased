@@ -1,0 +1,69 @@
+{{!< ../layout/fontstage_layout}}
+
+{{#contentFor 'fontstagePageStyles'}}
+  <link rel="stylesheet" href="../css/user/registrate_record.css">
+  <script type="text/javascript" src="../js/user/registrate_record.js"></script>
+{{/contentFor}}
+
+
+<div class="registrateRecord">
+  <ul class="nav nav-tabs">
+    <li role="presentation" data-name="record" name="record" class="active"><a href="#">报名进度</a></li>
+    <li role="presentation" data-name="recordHistory" name="recordHistory"><a href="#">历史报名记录</a></li>
+  </ul>
+
+
+
+  {{#if record}}
+
+<div class="infoyear">
+    <div class="record">
+      <table>
+        <tr>
+          <td class="word">项目编号:</td>
+          <td>{{contest.contestId}}</td>
+        </tr>
+        <tr>
+          <td class="word">项目名:</td>
+          <td>{{contest.contestName}}</td>
+        </tr>
+        <tr>
+          <td class="word">参与者:</td>
+          <td>{{contest.studentCount}}</td>
+        </tr>
+        <tr>
+          <td class="word">指导老师:</td>
+          <td>{{contest.tutor}}</td>
+        </tr>
+
+        <tr>
+          <td class="word">状态:</td>
+          <td class="contestSchedule">{{contest.schedule}}</td>
+        </tr>
+      </table>
+    </div>
+  {{else}}
+
+    <div class="onlineInfo">
+      今年您还没有报名，<a href="online_registration">快加入我们吧</a>
+    </div>
+
+  {{/if}}
+</div>
+
+
+  <div class="recordHistory">
+    <ul>
+      {{#each contests}}
+        <li>
+          <a href="schedule?data={{contestId}}" data-name= {{contestId}} title= {{contestTitle}}>
+      {{contestTitle}}</a>
+        </li>
+        <span>{{year}}</span>
+      {{/each}}
+    </ul>
+  </div>
+
+
+
+</div>

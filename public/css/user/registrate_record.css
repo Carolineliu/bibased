@@ -1,0 +1,46 @@
+.container {
+  padding: 0;
+  background: white;
+}
+.registrateRecord {
+  width: 1000px;
+  margin: 0 auto;
+  min-height: 400px;
+}
+.record {
+  margin: 26px 16px;
+}
+.record tr {
+  height: 34px;
+}
+.record .word{
+  text-align: right;
+}
+.record tr{
+  text-align: left;;
+  text-indent: 12px;
+}
+.recordHistory {
+  border-bottom: 1px solid #d0d6d9;
+  height: 600px;
+}
+.recordHistory ul {
+  list-style-type: none;
+  margin-left: -40px;
+}
+.recordHistory ul li {
+  border-bottom: 1px solid #d0d6d9;
+  text-indent: 30px;
+  text-overflow: ellipsis;
+}
+.recordHistory ul a {
+  text-decoration: none;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  color: black;
+}
+.onlineInfo{
+  margin-top: 18px;
+  margin-left: 5px;
+}

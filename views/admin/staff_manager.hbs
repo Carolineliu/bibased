@@ -1,0 +1,52 @@
+{{!< default}}
+{{#contentFor 'adminPageStyles'}}
+  <link rel="stylesheet" href="../css/admin/staff_manager.css">
+  <script type="text/javascript" src="../js/admin/staff_manager.js"></script>
+{{/contentFor}}
+
+<div class="staff">
+  <div class="staffHeader">
+    用户管理
+  </div>
+
+  <div class="staffTableHeader">
+    <i class="icon-staff"></i> 用户列表
+    <a href="#" class="tools">
+      <i class="icon-trash"></i>删除
+    </a>
+  </div>
+
+
+
+  <div class="staffTable">
+    <table class="staffContent">
+      <thead id="staffContents">
+        <tr>
+          <th>
+            <input type="checkbox" id="allSelect">
+          </th>
+          <th data-name="staffId">学校管理员编号</th>
+          <th data-name="staffName">学校管理员姓名</th>
+          <th data-name="schoolName">学校名称</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each staffs}}
+          <tr>
+            <td>
+              <input type="checkbox" class="select" data-name= {{staffId}}>
+            </td>
+            <td>{{staffId}}</td>
+            <td>{{staffName}}</td>
+            <td>{{schoolName}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    <div id="page" class="pagination" data-name="1">
+      <span class="current prev">&lt; 上一页</span>
+      <span class="current">1</span>
+      <span class="current next">下一页 &gt;</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,99 @@
+{{!< default}}
+{{#contentFor 'pageStyles'}}
+  <link rel="stylesheet" href="../css/fontstage_layout.css">
+  <script type="text/javascript" src="../js/fontstage_layout.js"></script>{{{block 'fontstagePageStyles'}}}
+{{/contentFor}}
+
+{{#if state}}
+  <span class="state">{{state}}</span>
+  <div class="loginSuccess">
+    <span class="welcome">
+      大学生科技竞赛>欢迎
+    </span>！
+    <div class="loginInfo">
+      <ul class="nav nav-pills">
+        <li role="presentation" class="dropdown">
+          <a class="dropdown-toggle settings" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu open">
+            <li><a href="personalInfo" class="myselfInfo">个人信息</a></li>
+            <li><a href="#" class="logout">注销</a></li>
+            <li><a href="registrate_record" class="logout">查看比赛进度</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+{{else}}
+
+  <div class="subreg">
+    <label>用户名:</label>
+    <input type="text" name="userName" class="userName" placeholder="请输入用户名">
+    <label>密码:</label>
+    <input type="password" name="password" class="password" placeholder="请输入密码">
+    <input type="submit" class="submit" value="登录">
+    <label class="info"></label>
+    <a href="findPassword">找回密码</a>
+    <a href="register">注册</a>
+  </div>
+{{/if}}
+
+
+<div class="header">
+  <div class="logo">
+    <a href="/"><i>大学生科技竞赛</i></a>
+  </div>
+  <ul class="navsContent">
+    <li>
+      <a href="/" class="tag">
+        <span>首页</span>
+      </a>
+    </li>
+    <li>
+      <a href="news">
+        <span>新闻展示</span>
+      </a>
+    </li>
+    <li>
+      <a href="notice">
+        <span>比赛信息</span>
+      </a>
+    </li>
+    <li>
+      <a href="winner">
+        <span>获奖信息</span>
+      </a>
+    </li>
+    <li>
+      <a href="contest">
+        <span>作品库</span>
+      </a>
+    </li>
+    <li>
+      <a href="online_registration">
+        <span class="important">报名入口</span>
+      </a>
+    </li>
+    <li>
+      <a href="aboutUs">
+        <span>关于我们</span>
+      </a>
+    </li>
+  </ul>
+
+</div>
+
+<div class="container">
+  {{{body}}}
+</div>
+
+<div class="footer">
+  <span class="connectUs">
+    联系我们：15829642635</span>
+  <p>
+    全国大学生科技竞赛
+  </p>
+
+</div>

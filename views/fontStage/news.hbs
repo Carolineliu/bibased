@@ -1,0 +1,27 @@
+{{!< ../layout/fontstage_layout}}
+
+{{#contentFor 'fontstagePageStyles'}}
+  <link rel="stylesheet" href="../css/user/news.css">
+  <script type="text/javascript" src="../js/user/news.js"></script>
+{{/contentFor}}
+
+
+<div class="news">
+  <div class="ad"></div>
+  <div class="newsContent">
+    <h4>新闻资讯</h4>
+    <div class="content">
+      <ul>
+        {{#each news}}
+          <li>
+            <a href="news_detail?data={{newsId}}" data-name= {{newsId}} title= {{newsTitle}}>
+        {{newsTitle}}</a>
+            <span class="newsTime">{{newsTime}}</span>
+
+          </li>
+        {{/each}}
+      </ul>
+
+    </div>
+  </div>
+</div>

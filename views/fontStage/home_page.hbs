@@ -1,0 +1,67 @@
+{{!< ../layout/fontstage_layout}}
+{{#contentFor 'fontstagePageStyles'}}
+  <script src="../jquery/jquery.slides.min.js"></script>
+  <link rel="stylesheet" href="../css/user/home_page.css">
+  <script type="text/javascript" src="../js/user/home_page.js"></script>
+{{/contentFor}}
+
+<div class="outStandingWorks" id="outStandingWorks">
+  <div class="ad"></div>
+  <div id="backPicture">
+    <img src="../images/slide1.png">
+    <img src="../images/slide2.jpg">
+    <img src="../images/slide3.jpg">
+    <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+    <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+  </div>
+
+  <div class="news">
+    <h3>
+      <span>新闻公告</span>
+    </h3>
+    <ul>
+      {{#each news}}
+        <li><a href="news_detail?data={{newsId}}" title= {{newsTitle}}>{{newsTitle}}</a></li>
+      {{/each}}
+      {{#each notices}}
+        <li><a href="notice_detail?data={{noticeId}}" title= {{noticeTitle}}>{{noticeTitle}}</a></li>
+      {{/each}}
+    </ul>
+  </div>
+
+  <div class="excellentWorks">
+    <h4>优秀作品展示</h4>
+    {{#each contests}}
+      <a href="contest_detail?data={{contestId}}" data-name= {{contestId}}>
+        <img src="../images/contest2.jpg">
+      </a>
+    {{/each}}
+    <!-- <a href="#">
+      <img src="../images/contest1.jpg">
+    </a>
+    <a href="#">
+      <img src="../images/contest2.jpg">
+    </a>
+    <a href="#">
+      <img src="../images/contest3.jpg">
+    </a>
+    <a href="#">
+      <img src="../images/contest4.jpg">
+    </a>
+    <a href="#">
+      <img src="../images/contest5.jpg">
+    </a>
+    <a href="#">
+      <img src="../images/contest6.jpg">
+    </a> -->
+  </div>
+
+  <div class="introduce">
+    <h4>介绍</h4>
+    <p>
+      本竞赛，是由共青团中央、中国科协、教育部和全国学联、地方省级人民政府共同主办的全国性的大学生课外学术科技创业类竞赛，承办高校为国内著名大学。每个项目每年举办一届。本竞赛被誉为中国大学生学生科技创新创业的“奥林匹克”盛会，是目前国内大学生最关注最热门的全国性竞赛，也是全国最具代表性、权威性、示范性、导向性的大学生竞赛。
+      <a href="aboutUs">更多</a></p>
+
+  </div>
+
+</div>

@@ -1,0 +1,136 @@
+  .outStandingWorks {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .ad {
+    background: url(../../images/ad.jpg);
+    height: 290px;
+  }
+  #backPicture {
+    height: 270px;
+    width: 434px;
+    float: left;
+    margin-top: 20px;
+  }
+  #backPicture .slidesjs-navigation {
+    margin-top: 3px;
+  }
+  #backPicture .slidesjs-previous {
+    margin-right: 5px;
+    float: left;
+  }
+  #backPicture .slidesjs-next {
+    margin-right: 5px;
+    float: left;
+  }
+  .slidesjs-pagination {
+    margin: 6px 0 0;
+    float: right;
+    list-style: none;
+  }
+  .slidesjs-pagination li {
+    float: left;
+    margin: 0 1px;
+  }
+  .slidesjs-pagination li a {
+    display: block;
+    width: 13px;
+    height: 0;
+    padding-top: 13px;
+    background-image: url(../../images/pagination.png);
+    background-position: 0 0;
+    float: left;
+    overflow: hidden;
+  }
+  .slidesjs-pagination li a.active, .slidesjs-pagination li a:hover.active {
+    background-position: 0 -13px
+  }
+  .slidesjs-pagination li a:hover {
+    background-position: 0 -26px
+  }
+  .slidesjs-stop slidesjs-navigation, .slidesjs-play slidesjs-navigation slidesjs-playing {
+    color: white;
+  }
+  #backPicture a:link, #backPicture a:visited {
+    color: #333
+  }
+  #backPicture a:hover, #backPicture a:active {
+    color: #9e2020
+  }
+  .news {
+    float: left;
+    margin-left: 30px;
+    width: 536px;
+    height: 280px;
+    overflow: hidden;
+  }
+  .news h3 {
+    height: 28px;
+    line-height: 28px;
+    background: url(../../images/text.gif) repeat-x;
+  }
+  .news h3 span {
+    color: #7c7c7c;
+    font-size: 14px;
+    background: #FFF;
+    padding: 0 9px;
+    display: inline-block;
+    height: 25px;
+    margin-left: 10px;
+    line-height: 25px;
+  }
+  .news ul {
+    margin-left: -12px;
+  }
+  .news li {
+    list-style: none;
+    cursor: pointer;
+  }
+  .news ul li a {
+    color: #333333;
+    overflow: hidden;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    text-decoration: none;
+  }
+  .excellentWorks {
+    margin-top: 10px;
+    width: 574px;
+    height: 480px;
+    float: left;
+  }
+  .excellentWorks h4, .introduce h4 {
+    text-indent: 16px;
+    height: 34px;
+    line-height: 34px;
+    background: lightgreen;
+  }
+  .excellentWorks a {
+    width: 154px;
+    height: 197px;
+    display: inline-block;
+    color: #616161;
+    border: 1px solid #DFDFDF;
+    float: left;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    list-style: none;
+  }
+  .excellentWorks a img {
+    width: 154px;
+    height: 169px;
+  }
+  .introduce {
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 360px;
+    float: left;
+    height: 480px;
+  }
+  .introduce p {
+    height: 400px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /*background: url(../../images/text-bg.gif) repeat-y;*/
+  }

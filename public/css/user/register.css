@@ -1,0 +1,81 @@
+h2 {
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  padding: 0px;
+}
+.register {
+  background: white;
+}
+.registerHeader {
+  width: 600px;
+  border-bottom: 1px solid #D9D9D9;
+  padding: 30px 0 10px;
+  margin-left: 200px;
+}
+.registerHeader h2 {
+  font-size: 17px;
+  font-weight: bold;
+}
+.registerHeader p {
+  float: right;
+  margin-top: -12px;
+  margin-right: 6px;
+}
+.registerContent {
+  margin: 20px 0 0 200px;
+}
+.registerContent tr {
+  height: 40px;
+}
+.registerContent .registerWord {
+  text-align: right;
+}
+.registerContent td {
+  vertical-align: middle;
+  font-weight: normal;
+  height: 28px;
+  line-height: 28px;
+  font-size: 16px;
+  width: 80px;
+}
+.registerContent input[type="radio"] {
+  border: 1px solid #BDC7D8;
+  font-size: 14px;
+  height: 28px;
+  line-height: 28px;
+  padding: 5px 4px;
+  vertical-align: middle;
+  margin-left: 50px;
+}
+.registerContent td .registerFill {
+  width: 200px;
+  border: 1px solid #BDC7D8;
+  font-size: 14px;
+  height: 28px;
+  line-height: 28px;
+  padding: 5px 4px;
+  vertical-align: middle;
+  margin-left: 18px;
+}
+#submit {
+  height: 30px;
+  width: 60px;
+  margin: 0 auto;
+  margin: 16px 0 0 360px;
+  background: url(../../images/nav.jpg);
+  font-size: 16px;
+  color: white;
+  border: none;
+}
+.tips: {
+  padding: 10px 0 0 10px;
+  color: #999;
+  font-weight: normal;
+}
+.error {
+  padding: 10px 0 0 10px;
+  color: #f66;
+  font-weight: normal;
+}

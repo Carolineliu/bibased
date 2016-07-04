@@ -1,0 +1,43 @@
+{{!< default}}
+{{#contentFor 'judgePageStyles'}}
+  <link rel="stylesheet" href="../css/judge/setting.css">
+  <script type="text/javascript" src="../js/judge/setting.js"></script>
+{{/contentFor}}
+
+
+<div id="judgeSetting">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <label class="word">修改密码</label>
+    </div>
+
+    <div class="panel-body">
+
+      <table>
+        <tr>
+          <td>原密码</td>
+          <td>
+            <input type="password" id="password" class="password">
+          </td>
+        </tr>
+        <tr>
+          <td>新密码</td>
+          <td>
+            <input type="password" id="newPass" class="newPass">
+          </td>
+        </tr>
+        <tr>
+          <td>请确认新密码</td>
+          <td>
+            <input type="password" id="passConfirm" class="passConfirm">
+          </td>
+        </tr>
+      </table>
+
+      <div class="info"></div>
+
+      <div id="submit">
+        <input type="button" class="submit" value="提交" />
+      </div>
+
+    </div>

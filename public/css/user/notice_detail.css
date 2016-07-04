@@ -1,0 +1,21 @@
+.noticeDetail {
+  width: 1000px;
+  margin: 0px auto;
+  background: white;
+  min-height: 600px;
+}
+.noticeDetailHeader{
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom:10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+}
+.noticeTime{
+  font-size: 12px;
+  margin-top: 10px;
+}
+.noticeDetailContent {
+  width: 1000px;
+  padding-top: 30px;
+}

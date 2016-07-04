@@ -1,0 +1,81 @@
+.header {
+  height: 42px;
+  width: 100%;
+  background: #212121;
+}
+.systemName {
+  width: 200px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 18px;
+  text-align: center;
+  float: left;
+  color: white;
+}
+.header .adminName {
+  color: #ddd;
+}
+.header .nav .dropdown-toggle:hover, .header .nav .dropdown.open .dropdown-toggle {
+  background-color: #383838 !important;
+}
+.nav-pills {
+  margin-right: 100px;
+  float: right;
+}
+.contentPanel {
+  background: #3d3d3d;
+  list-style: none;
+  padding: 0;
+  padding-top: 50px;
+}
+.contentPanel li a {
+  position: relative;
+  display: block;
+  line-height: 44px;
+  height: 43px;
+  padding-left: 22px;
+  border-bottom: 1px solid #5c5c5c;
+  color: white;
+  font-weight: 300;
+  text-decoration: none;
+}
+.contentPanel li a i {
+  color: #969696;
+  margin-right: 10px;
+  font-size: 18px;
+}
+.contentLeft {
+  width: 16%;
+  float: left;
+}
+.contentRight {
+  padding: 0 20px;
+  float: left;
+  width: 83%;
+}
+.active {
+  background: #e02222;
+}
+.contentPanel .selected {
+  display: block;
+  width: 8px;
+  height: 25px;
+  background-image: url("../images/selected.png");
+  float: right;
+  position: absolute;
+  right: 0px;
+  top: 8px;
+}
+.contentPanel .selected {
+  display: block;
+  width: 8px;
+  height: 25px;
+  background-image: url("../../images/select.png");
+  float: right;
+  position: absolute;
+  right: 0px;
+  top: 8px;
+}
+.contentPanel .hide{
+  display: none;
+}

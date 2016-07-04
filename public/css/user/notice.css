@@ -1,0 +1,41 @@
+.notice {
+  width: 1000px;
+  margin: 0 auto;
+}
+.ad {
+  background: url(../../images/bg1.jpg);
+  height: 290px;
+}
+.noticeContent h4 {
+  text-indent: 16px;
+  height: 34px;
+  line-height: 34px;
+  background: lightgreen;
+  margin-bottom: 0px;
+}
+.noticeContent .content {
+  border: 1px solid #d0d6d9;
+  height: 600px;
+}
+.noticeContent .content ul {
+  list-style-type: none;
+  margin-left: -40px;
+}
+.noticeContent .content ul li {
+  border-bottom: 1px solid #d0d6d9;
+  text-indent: 30px;
+  text-overflow: ellipsis;
+}
+.noticeContent .content ul a {
+  text-decoration: none;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  color: black;
+}
+.noticeTime{
+  float: right;
+  line-height: 50px;
+  margin-right: 20px;
+  color: gray;
+}
