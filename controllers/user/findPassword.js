@@ -33,8 +33,8 @@ FindPassword.findPassword = function(req, res) {
         }
       }).then(function(data) {
         if (data) {
-          var user = "527974388@qq.com";
-          var password = "WyloveLxy110817";
+          var user = "QQ邮箱";
+          var password = "你自己的QQ密码";
           var smtpTransport = nodemailer.createTransport({
             service: "QQ",
             auth: {
